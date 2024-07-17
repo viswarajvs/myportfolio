@@ -1,0 +1,21 @@
+@import url('../../common/theme.css');
+
+.socialLinkItem {
+    height: clamp(1.2rem, 2vw, 3rem);
+    width: clamp(1.2rem, 2vw, 3rem);
+}
+
+.sidebarContainer {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    padding-right: 2vw;
+    transform: translate(0, -50%);
+}
+
+.sidebarContainer {
+    svg * {
+        fill: var(--primary-icon-color);
+        stroke: var(--primary-icon-color);
+    }
+}

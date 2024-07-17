@@ -1,0 +1,18 @@
+
+
+.sidebar-container {
+    /* max-width: 3vw; */
+}
+.scroller-container {
+    /* max-width: 2vw; */
+}
+.child-container {
+    width: 100%;
+    padding: 1vw;
+}
+.mainPage {
+    overflow-y: scroll;
+}
+.mainPage::-webkit-scrollbar {
+    display: none;
+}

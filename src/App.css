@@ -1,5 +1,27 @@
+@import './common/theme.css';
+
+@font-face {
+  font-family: "Galey-Light";
+  src: local("GaleyLight"),
+    url("./fonts/Galey-light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Galey-Bold";
+  src: local("GaleyBold"),
+    url("./fonts/Galey-bold.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
+  background-color: var(--primary-bg-color);
+  height: 100vh;
+  max-height: 100dvh;
+  color: var(--primary-font-color);
+  cursor: none;
+  font-family: 'Galey-Light', 'Segoe UI';
+  transition: background-color 1s ease-in-out;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  overflow: hidden;
 }
 
 .App-logo {

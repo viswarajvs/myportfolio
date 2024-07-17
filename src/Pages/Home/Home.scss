@@ -1,0 +1,16 @@
+.aboutme {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.viswaname {
+    font-size: clamp(2rem, 4vw, 4rem);
+}
+
+@media (max-width: 600px) {
+    .homepage-container {
+        flex-direction: column;
+        div {
+            width: 100%;
+        }
+    }
+}

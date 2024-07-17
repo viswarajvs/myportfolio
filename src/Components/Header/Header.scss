@@ -1,0 +1,37 @@
+
+.header {
+    height: 12vh;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+.theme-icons {
+    position: relative;
+    display: inline-block;
+    width: clamp(3rem, 5vw, 5rem);
+}
+.theme-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    &.show {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    &.hide {
+        transform: scale(0) rotate(180deg);
+        opacity: 0;
+    }
+}
+.menuicon {
+    width: clamp(3rem, 5vw, 5rem);
+    justify-content: end;
+}
+
+@media (max-width: 600px) {
+
+}

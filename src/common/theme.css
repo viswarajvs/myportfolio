@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #3E4498;
+    --secondary-color: #ACA9BB;
+    
+    --primary-bg-light: #e5e5e5;
+    --primary-font-light: #656161;;
+    --primary-icon-light: #3E4498;
+
+    --primary-bg-dark: #1d1d1d;
+    --primary-font-dark: #ACA9BB;
+    --primary-icon-dark: #ACA9BB;
+}
+.theme-dark {
+    --primary-bg-color: var(--primary-bg-dark);
+    --primary-font-color: var(--primary-font-dark);
+    --primary-icon-color: var(--primary-icon-dark);
+  }
+
+.theme-light {
+    --primary-bg-color: var(--primary-bg-light);
+    --primary-font-color: var(--primary-font-light);
+    --primary-icon-color: var(--primary-icon-light);
+}
