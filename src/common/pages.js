@@ -1,15 +1,19 @@
-
+import Home from '../Pages/Home/Home'
+import AboutMe from '../Pages/AboutMe/AboutMe'
 export const pages = [
     {
         id: 1,
-        path: '/'
+        path: '/',
+        element: Home
     },
     {
         id:2,
-        path: '/aboutme'
+        path: '/aboutme',
+        element: AboutMe
     },
     {
         id:3,
-        path: '/hello'
+        path: '/hello',
+        element: Home
     }
 ]

@@ -1,13 +1,23 @@
+@import url('../../common/theme.css');
 
-
-.sidebar-container {
-    /* max-width: 3vw; */
+.one-slider-profile {
+    width: auto;
+    transition: background-color 1s ease-in-out;
 }
 .scroller-container {
-    /* max-width: 2vw; */
+    position: fixed;
+    left: 0;
+    top: 50%;
+    padding-right: 2vw;
+    transform: translate(0, -50%);
 }
 .child-container {
-    width: 100%;
+    width: calc(100% - 30vw);
+    margin-top: 5vw;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: var(--primary-card-color);
+    transition: background-color 1s ease-in-out;
     padding: 1vw;
 }
 .mainPage {
@@ -15,4 +25,20 @@
 }
 .mainPage::-webkit-scrollbar {
     display: none;
+}
+.one-slider-profile {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background-image: var(--primary-bgimage); */
+    transition: background-image 0.5s ease-in-out;
+    background-repeat: repeat;
+}
+
+@media (max-width: 600px) {
+    .child-container {
+        width: 100%;
+        margin-top: 20vw;
+    }
 }

@@ -11,13 +11,11 @@ function App() {
   const { theme } = useContext(ThemeContext);
   return (
     <div className={`App ${theme}`}>
-        <CustomCursorManager>
-          <CustomCursor />
-          <div className='flex flex-column height-100vh'>
-            <Header />
-            <MainPage />
-          </div>
-        </CustomCursorManager>
+      <CustomCursorManager>
+        <CustomCursor />
+        <Header />
+        <MainPage />
+      </CustomCursorManager>
     </div>
   )
 }

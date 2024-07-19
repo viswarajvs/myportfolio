@@ -1,27 +1,30 @@
-import { motion } from "framer-motion"
-import { useContext, useEffect, useState } from "react"
-import { PageContext } from "../../Context/PageContext"
-
-const Wrapper = ({ children }) => {
-    const { direction, currentPage } = useContext(PageContext)
-    const [isExit, setIsExit] = useState(false)
-    useEffect(() => {
-        return () => {
-            setIsExit(true)
-        }
-    }, [currentPage])
+import { motion, useScroll, useTransform } from "framer-motion"
+import './Wrapper.scss'
+import { useRef } from "react"
+const Wrapper = ({ children, index }) => {
+    const myRef = useRef()
+    const { scrollYProgress } = useScroll({
+        target: myRef,
+        offset: ['start end', 'end start']
+    })
+    const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 1, 0.2])
+    const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 1, 0.5])
     return (
-        <motion.div
-            initial={{ transform: `${isExit ? 'translateY(0)' : direction === 'down' ? 'translateY(100%)' : 'translateY(-100%)' }` }}
-            animate={{ transform: 'translateY(0)' }}
-            exit={{ transform: `${direction === 'down' ? 'translateY(-100%)' : 'translateY(100%)' }` }}
-            style={{ height: '100%' }}
-            transition={{
-                duration: 0.3
-            }}
+        <div
+            key={index}
+            ref={myRef}
+            className={`wrapper-main primary-bg`}
+
         >
-            {children}
-        </motion.div>
+            <motion.div
+                style={{
+                    height: '100vh',
+                    opacity,
+                    scale
+                }}
+
+            >{children}</motion.div>
+        </div >
     )
 }
 export default Wrapper

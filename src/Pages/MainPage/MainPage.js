@@ -1,40 +1,72 @@
-import { useRef } from "react"
-import SideBar from "../../Components/SideBar/SideBar"
-import './MainPage.css'
-import Home from "../Home/Home"
-import AboutMe from "../AboutMe/AboutMe"
-import withScrollAndSwipe from "../../HOC/withScrollAndSwipe"
-import { Route, Routes, useLocation } from "react-router-dom"
 import { pages } from "../../common/pages"
-import { AnimatePresence } from "framer-motion"
-import Wrapper from "./Wrapper"
+import SideBar from "../../Components/SideBar/SideBar"
+import Wrapper from './Wrapper'
+import './MainPage.css'
+import Reveal from "../../HOC/withReveal"
+import { motion } from "framer-motion"
+import { useContext, useEffect, useState } from "react"
+import darkBG from '../../common/images/darkbg.svg'
+import lightBG from '../../common/images/lightbg.svg'
+import { ThemeContext } from "../../Context/ThemeContext"
 
 const MainPage = () => {
-    const divRef = useRef(null)
-    const location = useLocation()
-    const MyComponent = () => {
-        return null
+    const { theme } = useContext(ThemeContext)
+    const getCurrentImage = () => {
+        if (theme === 'theme-dark')
+            return darkBG
+        else
+            return lightBG
     }
-    const WrappedComponent = withScrollAndSwipe(MyComponent)
-    const HomeAnimated = () => (<Wrapper><Home /></Wrapper>)
-    const AboutMeAnimated = () => (<Wrapper><AboutMe /></Wrapper>)
-    const HomeAnimateds = () => (<Wrapper><Home /></Wrapper>)
+    const [bgImage, setBgImage] = useState(getCurrentImage())
+
+    useEffect(() => {
+        const image = getCurrentImage()
+        setBgImage(image)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [theme])
+    console.log(bgImage, theme)
     return (
-        <div ref={divRef} className="flex space-between margin-0-1 flex-1">
-            <div className="scroller-container">Scroller</div>
-            <div className="child-container">
-                <AnimatePresence mode="wait" initial={false}>
-                    <Routes location={location} key={location.pathname}>
-                        <Route Component={HomeAnimated} path="/" />
-                        <Route Component={AboutMeAnimated} path="/aboutme" />
-                        <Route Component={HomeAnimateds} path="/hello" />
-                    </Routes>
-                </AnimatePresence>
-            </div>
-            <WrappedComponent pages={pages} divRef={divRef} />
+        <>
+            <motion.div
+                key={bgImage} variants={variants} animate={'show'} initial="hide"
+                style={{ backgroundImage: `url(${bgImage})` }}
+                className="flex space-between flex-1 one-slider-profile">
+                <Reveal
+                    xHidden={-50}
+                    className="child-container"
+                >
+                    {
+                        pages.map((item, index) => {
+                            const PageRender = item.element
+                            return (
+                                <Wrapper index={index}>
+                                    <PageRender />
+                                </Wrapper>
+                            )
+                        })
+
+                    }
+                </Reveal>
+            </motion.div>
             <div className="sidebar-container"><SideBar /></div>
-        </div>
+        </>
+
     )
 }
+export const variants = {
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            ease: 'easeInOut',
+            duration: 0.3
+        }
+    },
+    hide: {
+        y: -20,
+        opacity: 0
+    }
+};
+
 
 export default MainPage

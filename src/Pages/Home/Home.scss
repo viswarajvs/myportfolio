@@ -3,14 +3,27 @@
 }
 
 .viswaname {
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 10rem);
+    font-weight: bold;
+    font-family: 'Galey-Bold', Courier, monospace;
 }
+.verifiedProfilePic {
+    width: clamp(10rem, 15vw, 10rem);
+    height: clamp(10rem, 15vw, 10rem);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.shortBio {
 
+}
+.verifiedIcon {
+    width: clamp(2.2rem, 4vw, 5rem);
+    height: clamp(2.2rem, 4vw, 5rem);
+    margin-top: 2px;
+}
 @media (max-width: 600px) {
     .homepage-container {
         flex-direction: column;
-        div {
-            width: 100%;
-        }
     }
 }

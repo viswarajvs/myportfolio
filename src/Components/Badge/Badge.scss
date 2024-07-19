@@ -1,0 +1,12 @@
+@import url('../../common/theme.css');
+
+.badge {
+    padding: 0 0.5vw;
+    border-radius: 5px;
+    height: 2vw;
+}
+
+.badge-default {
+    background-color: #707070;
+    color: var(--primary-font-dark);
+}

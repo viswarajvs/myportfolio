@@ -12,7 +12,7 @@ const PageProvider = ({ children }) => {
         if (pageObj?.length > 0) {
             return pageObj?.[0]?.id
         }
-        return 1
+        return 0
     }
     const [currentPage, setCurrentPage] = useState(getPage())
     const [direction, setDirection] = useState('down')

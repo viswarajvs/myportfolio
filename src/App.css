@@ -14,14 +14,16 @@
 .App {
   text-align: center;
   background-color: var(--primary-bg-color);
-  height: 100vh;
-  max-height: 100dvh;
   color: var(--primary-font-color);
   cursor: none;
+  height: 100dvh;
+  overflow: overlay;
   font-family: 'Galey-Light', 'Segoe UI';
   transition: background-color 1s ease-in-out;
+  transition: color 1s ease-in-out;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   overflow: hidden;
+  font-weight: 600;
 }
 
 .App-logo {

@@ -1,23 +1,51 @@
 :root {
     --primary-color: #3E4498;
     --secondary-color: #ACA9BB;
-    
-    --primary-bg-light: #e5e5e5;
-    --primary-font-light: #656161;;
+    /* ------------------------------ */
+    --primary-bg-light: #f1f1f1;
+    --primary-font-light: #272626;
     --primary-icon-light: #3E4498;
+    --primary-card-light: rgba(237, 237, 237, 0.97);
 
-    --primary-bg-dark: #1d1d1d;
-    --primary-font-dark: #ACA9BB;
+    --primary-bgimage-light: url('./images/lightbg.svg');
+
+    --secondary-font-light: #898994;
+
+    --ternary-font-light: #aeaeb8;
+
+    /* ------------------------------ */
+    --primary-bg-dark: rgba(31, 31, 31, 0.5);
+    --primary-font-dark: #d5d5dd;
     --primary-icon-dark: #ACA9BB;
+    --primary-card-dark: rgb(13, 13, 13, 0.97);
+
+    --primary-bgimage-dark: url('./images/darkbg.svg');
+
+    --secondary-font-dark: #9496b0;
+
+    --ternary-font-dark: #656676;
+
 }
 .theme-dark {
     --primary-bg-color: var(--primary-bg-dark);
     --primary-font-color: var(--primary-font-dark);
     --primary-icon-color: var(--primary-icon-dark);
+    --primary-card-color: var(--primary-card-dark);
+    --primary-bgimage: var(--primary-bgimage-dark);
+
+    --secondary-font-color: var(--secondary-font-dark);
+
+    --ternary-font-color: var(--ternary-font-dark);
   }
 
 .theme-light {
     --primary-bg-color: var(--primary-bg-light);
     --primary-font-color: var(--primary-font-light);
     --primary-icon-color: var(--primary-icon-light);
+    --primary-card-color: var(--primary-card-light);
+    --primary-bgimage: var(--primary-bgimage-light);
+
+    --secondary-font-color: var(--secondary-font-light);
+
+    --ternary-font-color: var(--ternary-font-light);
 }

@@ -2,11 +2,32 @@
 .header {
     height: 12vh;
     font-size: clamp(1rem, 2vw, 2rem);
+    z-index: 2;
+    position: fixed;
+    width: -webkit-fill-available;
+    justify-content: flex-end;
+    gap: clamp(2rem, 3vw, 4rem);
+}
+.title {
+    gap: clamp(2rem, 1vw, 2rem);
 }
 .theme-icons {
     position: relative;
     display: inline-block;
-    width: clamp(3rem, 5vw, 5rem);
+    width: clamp(1.8rem, 2vw, 2rem);
+    height: clamp(1.8rem, 2vw, 2rem);
+    margin-top: 4px;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+.profile-pic {
+    width: clamp(2rem, 3vw, 3rem);
+    height: clamp(2rem, 3vw, 3rem);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .theme-wrapper {
     position: absolute;

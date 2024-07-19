@@ -3,26 +3,28 @@ import { useContext } from 'react'
 import './Header.scss'
 import { ThemeContext } from '../../Context/ThemeContext'
 import { UilSun, UilMoon, UilBars } from '@iconscout/react-unicons'
+import Reveal from '../../HOC/withReveal'
+import Image from '../Image/Image'
+import profilePic from '../../common/images/vprofile-pic.jpg'
 
 const Header = () => {
     const { theme, toggleTheme } = useContext(ThemeContext)
     return (
-        <div className="header flex align-center margin-0-1 space-between">
-            <label className='title'>{`<Viswaraj />`}</label>
-            <div className='flex gap-1 align-center height-100'>
-                <div className='theme-icons'>
-                    <div className={`theme-wrapper ${theme === 'theme-light' ? 'show' : 'hide'}`}>
-                        <UilSun onClick={toggleTheme} className='hover-zoom-1 theme-main' />
-                    </div>
-                    <div className={`theme-wrapper ${theme !== 'theme-light' ? 'show' : 'hide'}`}>
-                        <UilMoon onClick={toggleTheme} className='hover-zoom-1 theme-main' />
-                    </div>
+        <Reveal
+            yHidden={50}
+            className="header flex align-center padding-0-1">
+            <div className='theme-icons'>
+                <div className={`theme-wrapper ${theme === 'theme-light' ? 'show' : 'hide'}`}>
+                    <UilSun onClick={toggleTheme} className='hover-zoom-1 theme-main' />
                 </div>
-                <label className='hover-zoom-1 flex align-center menuicon'>
-                    <UilBars />
-                </label>
+                <div className={`theme-wrapper ${theme !== 'theme-light' ? 'show' : 'hide'}`}>
+                    <UilMoon onClick={toggleTheme} className='hover-zoom-1 theme-main' />
+                </div>
             </div>
-        </div>
+            <span className='title flex align-center'>
+                <Image src={profilePic} className='profile-pic' />
+            </span>
+        </Reveal>
     )
 }
 
