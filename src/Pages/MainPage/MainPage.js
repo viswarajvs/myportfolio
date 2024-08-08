@@ -1,6 +1,5 @@
 import { pages } from "../../common/pages"
 import SideBar from "../../Components/SideBar/SideBar"
-import Wrapper from './Wrapper'
 import './MainPage.css'
 import Reveal from "../../HOC/withReveal"
 import { motion } from "framer-motion"
@@ -8,8 +7,11 @@ import { useContext, useEffect, useState } from "react"
 import darkBG from '../../common/images/darkbg.svg'
 import lightBG from '../../common/images/lightbg.svg'
 import { ThemeContext } from "../../Context/ThemeContext"
+import Wrapper from './Wrapper'
 
-const MainPage = () => {
+const MainPage = ({
+    homeRef
+}) => {
     const { theme } = useContext(ThemeContext)
     const getCurrentImage = () => {
         if (theme === 'theme-dark')
@@ -22,9 +24,9 @@ const MainPage = () => {
     useEffect(() => {
         const image = getCurrentImage()
         setBgImage(image)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [theme])
-    console.log(bgImage, theme)
+
     return (
         <>
             <motion.div
@@ -35,19 +37,21 @@ const MainPage = () => {
                     xHidden={-50}
                     className="child-container"
                 >
-                    {
-                        pages.map((item, index) => {
-                            const PageRender = item.element
-                            return (
-                                <Wrapper index={index}>
-                                    <PageRender />
-                                </Wrapper>
-                            )
-                        })
+                    <div>
+                        {
+                            pages.map((item, index) => {
+                                const PageRender = item.element
+                                return (
+                                    <Wrapper index={index} title={item.title}>
+                                        <PageRender />
+                                    </Wrapper>
+                                )
+                            })
 
-                    }
+                        }
+                    </div>
                 </Reveal>
-            </motion.div>
+            </motion.div >
             <div className="sidebar-container"><SideBar /></div>
         </>
 

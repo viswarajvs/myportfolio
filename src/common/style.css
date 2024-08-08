@@ -44,6 +44,30 @@
     font-family: 'Galey-Bold', 'Galey-Light', 'Segoe UI';
 }
 
+.sectiontitle {
+    font-size: clamp(2.5rem, 3vw, 8rem);
+    font-family: 'Galey-Bold', Courier, monospace;
+    color: var(--primary-font-color);
+    padding-bottom: 2vw;
+}
+.primary-font {
+    font-family: 'Galey-Bold', Courier, monospace;
+    color: var(--primary-font-color);
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+}
+.secondary-font {
+    color: var(--primary-font-color);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+.ternary-font {
+    color: var(--ternary-font-color);
+    font-size: clamp(0.8rem, 0.5vw, 1rem);
+}
+.para {
+    margin-top: 1vw;
+    color: var(--secondary-font-color);
+    font-size: clamp(0.9rem, 0.5vw, 1rem);
+}
 .space-between {
     justify-content: space-between;
 }
@@ -68,6 +92,7 @@
 .hover-zoom-1:hover {
     transform: scale(1.1)
 }
+
 .hover-zoom-0:hover {
     transform: scale(1.05)
 }
@@ -138,6 +163,9 @@ section {
 
 .gap-vh {
     gap: clamp(2rem, 3vw, 4rem);
+}
+.ternary-font-size {
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
 }
 
 /* width */

@@ -6,6 +6,7 @@
     --primary-font-light: #272626;
     --primary-icon-light: #3E4498;
     --primary-card-light: rgba(237, 237, 237, 0.97);
+    --primary-slip-light: rgba(233, 230, 230, 0.97);
 
     --primary-bgimage-light: url('./images/lightbg.svg');
 
@@ -18,6 +19,7 @@
     --primary-font-dark: #d5d5dd;
     --primary-icon-dark: #ACA9BB;
     --primary-card-dark: rgb(13, 13, 13, 0.97);
+    --primary-slip-dark: rgba(26, 26, 26, 0.97);
 
     --primary-bgimage-dark: url('./images/darkbg.svg');
 
@@ -32,6 +34,7 @@
     --primary-icon-color: var(--primary-icon-dark);
     --primary-card-color: var(--primary-card-dark);
     --primary-bgimage: var(--primary-bgimage-dark);
+    --primary-slip-color: var(--primary-slip-dark);
 
     --secondary-font-color: var(--secondary-font-dark);
 
@@ -44,6 +47,7 @@
     --primary-icon-color: var(--primary-icon-light);
     --primary-card-color: var(--primary-card-light);
     --primary-bgimage: var(--primary-bgimage-light);
+    --primary-slip-color: var(--primary-slip-light);
 
     --secondary-font-color: var(--secondary-font-light);
 

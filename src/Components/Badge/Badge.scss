@@ -1,9 +1,9 @@
 @import url('../../common/theme.css');
 
 .badge {
-    padding: 0 0.5vw;
+    padding: clamp(0.1rem, 0.2vw, 0.2rem) clamp(0.4rem, 0.5vw, 0.06rem);
     border-radius: 5px;
-    height: 2vw;
+    width: fit-content;
 }
 
 .badge-default {

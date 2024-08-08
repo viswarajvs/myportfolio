@@ -1,5 +1,5 @@
 import { motion, useAnimation, useInView } from "framer-motion"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 
 const Reveal = ({
     children,
@@ -16,6 +16,7 @@ const Reveal = ({
         if (isInView) {
             mainControls.start('visible')
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isInView])
     return (
         <motion.div

@@ -1,19 +1,32 @@
+import Experience from '../Pages/Experience/Experience'
+import Skills from '../Pages/Skills/Skills'
 import Home from '../Pages/Home/Home'
-import AboutMe from '../Pages/AboutMe/AboutMe'
 export const pages = [
     {
-        id: 1,
-        path: '/',
-        element: Home
+        id:1,
+        path: '/home',
+        element: Home,
+        isRef: true
+    },
+    {
+        id:1,
+        path: '/experience',
+        element: Experience,
+        title: 'Career journey'
     },
     {
         id:2,
-        path: '/aboutme',
-        element: AboutMe
+        element: Skills,
+        title: 'SKILLS'
     },
     {
         id:3,
-        path: '/hello',
-        element: Home
+        element: Skills,
+        title: 'PROJECTS'
+    },
+    {
+        id:4,
+        element: Skills,
+        title: 'PORTFOLIO'
     }
 ]

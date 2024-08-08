@@ -1,18 +1,21 @@
 
 import Reveal from '../../HOC/withReveal'
 import './Home.scss'
-import profilePic from '../../common/images/vprofile-pic.jpg'
 import Image from '../../Components/Image/Image'
 import verifiedIcon from '../../common/images/verifiedicon.svg'
 import { mydata } from '../../metadata/mydata'
 import Badge from '../../Components/Badge/Badge'
+import ProfilePic from '../ProfilePic/ProfilePic'
 const Home = () => {
+
     return (
-        <div className='homepage-container flex height-100 gap-2'>
-            <div className="aboutme width-100 height-100 padding-1 flex flex-column align-left">
+        <div className='homepage-container flex gap-2'>
+            <div className="aboutme width-100 padding-1 flex flex-column align-left">
                 <div className='width-100 flex flex-column align-center'>
                     <Reveal xHidden={-75} className='flex flex-column align-center'>
-                        <Image src={profilePic} className='verifiedProfilePic' />
+                        <div className='profileHolder hover-zoom-0'>
+                            <ProfilePic />
+                        </div>
                         <section className='flex-column align-center'>
                             <div className='viswaname bold flex justify-center gap-2'>
                                 <label>{mydata.profile.name}</label>

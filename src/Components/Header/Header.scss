@@ -23,8 +23,8 @@
     }
 }
 .profile-pic {
-    width: clamp(2rem, 3vw, 3rem);
-    height: clamp(2rem, 3vw, 3rem);
+    width: clamp(2rem, 3vw, 3rem) !important;
+    height: clamp(2rem, 3vw, 3rem) !important;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;

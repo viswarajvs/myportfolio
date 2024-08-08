@@ -4,12 +4,11 @@ const Image = ({
     src,
     name,
     className,
-    onClick
+    onClick,
+    ref
 }) => {
     return (
-        <div onClick={onClick&& onClick} className={`imgContainer ${className && className} hover-zoom-1`}>
-            <img src={src} alt={name} />
-        </div>
+        <img ref={ref} onClick={onClick && onClick} className={`imgContainer ${className && className}`} src={src} alt={name} />
     )
 }
 

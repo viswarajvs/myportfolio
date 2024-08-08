@@ -1,0 +1,41 @@
+
+
+.experience-container {
+    text-align: left;
+    color: var(--secondary-font-color);
+    background-color: var(--primary-slip-color);;
+    padding: clamp(2rem, 2vw, 3rem) clamp(1rem, 1vw, 2rem);
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.experienceParent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(2rem, 3vw, 3rem) 1vw;
+}
+.expLogo {
+    width: auto;
+    z-index: 10;
+    height: clamp(1.5rem, 2vw, 2rem);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-card-color);
+    svg {
+        z-index: 11;
+        width: inherit;
+        height: inherit;
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-container {
+        flex: unset;
+        max-width: 100%;
+        width: 100%;
+    }
+}

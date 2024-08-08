@@ -1,10 +1,11 @@
 
 import './Badge.scss'
 const Badge = ({
-    children
+    children,
+    className
 }) => {
     return (
-        <div className="flex align-center badge badge-default hover-zoom-0">{children}</div>
+        <div className={`flex align-center badge badge-default hover-zoom-0 ${className&& className}`}>{children}</div>
     )
 }
 

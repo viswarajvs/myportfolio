@@ -1,0 +1,30 @@
+.skillbar {
+    flex: 1 1 calc(50% - 0.5vw);
+    box-sizing: border-box;
+    max-width: calc(50% - 0.5vw);
+    height: clamp(3rem, 4vw, 5rem);
+    padding: clamp(0.1rem, 0.5vw, 0.5rem);
+    padding-bottom: calc(clamp(0.1rem, 0.5vw, 0.5rem) + 40px);
+    border-bottom: 2px solid var(--primary-slip-color);
+}
+.experiencecard {
+    font-size: clamp(0.4rem, 1vw, 1rem);
+}
+.progressHolder {
+    width: 100%;
+}
+
+.skilllogo {
+    height: clamp(2rem, calc(4vw - 1vw), 4rem);
+    width: clamp(2rem, calc(4vw - 1vw), 4rem);
+
+    svg {
+        height: inherit;
+        width: inherit;
+    }
+
+    svg * {
+        fill: var(--primary-icon-color);
+        stroke: var(--primary-icon-color);
+    }
+}
