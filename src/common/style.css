@@ -77,6 +77,10 @@
     color: var(--ternary-font-color);
     font-size: clamp(0.8rem, 0.5vw, 1rem);
 }
+.ternary-font-bright {
+    color: var(--secondary-font-bright-color);
+    font-size: clamp(0.8rem, 0.5vw, 1rem);
+}
 .para {
     margin-top: 1vw;
     color: var(--secondary-font-color);
@@ -102,6 +106,12 @@
 }
 .hover-zoom-0 {
     transition: transform 0.25s ease-in-out !important;
+}
+.hover-zoom-small {
+    transition: transform 0.25s ease-in-out !important;
+}
+.hover-zoom-small:hover {
+    transform: scale(1.01) !important;
 }
 .hover-zoom-1:hover {
     transform: scale(1.1) !important;

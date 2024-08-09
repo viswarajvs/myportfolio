@@ -14,6 +14,7 @@
 
     --secondary-button-light: #5783db;
     --secondary-font-light: #66666d;
+    --secondary-font-bright-light: #c1c1ce;
 
     --ternary-font-light: #808086;
 
@@ -29,6 +30,7 @@
     --primary-bgimage-dark: url('./images/darkbg.svg');
 
     --secondary-font-dark: #9496b0;
+    --secondary-font-bright-dark: #b8b9d2;
     --secondary-button-dark: #49484e;
 
     --ternary-font-dark: #656676;
@@ -46,6 +48,7 @@
 
     --secondary-button-color: var(--secondary-button-dark);
     --secondary-font-color: var(--secondary-font-dark);
+    --secondary-font-bright-color: var(--secondary-font-bright-dark);
 
     --ternary-font-color: var(--ternary-font-dark);
   }
@@ -62,6 +65,7 @@
 
     --secondary-font-color: var(--secondary-font-light);
     --secondary-button-color: var(--secondary-button-light);
+    --secondary-font-bright-color: var(--secondary-font-bright-light);
 
     --ternary-font-color: var(--ternary-font-light);
 }

@@ -1,14 +1,39 @@
+/* FlipCard.css */
+.flip-card {
+    perspective: 1000px;
+    transition: height 0.1s ease-in-out !important; /* Smooth height transition */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
 
-.flipcard {
-    transition: all 1s ease-in-out;
-}
-.showCard {
-    transition: all 1s ease-in-out;
-    opacity: 1;
-}
-.hideCard {
-    transition: all 1s ease-in-out;
+  .flip-card-front:hover {
+    transform: rotateY(5deg);
+  }
+  
+  .flip-card-back:hover {
+    transform: rotateY(175deg);
+  }
+  
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
     position: absolute;
-    opacity: 0;
-    transform: translateX(-100%) rotateY(-180deg);
-}
+    width: 100%;
+    backface-visibility: hidden;
+  }
+
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  

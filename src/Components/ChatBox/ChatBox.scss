@@ -1,0 +1,21 @@
+
+.chatboxContainer {
+    display: flex;
+}
+.meBox {
+    justify-content: end;
+}
+.chat-box {
+    border-radius: 10px;
+    padding: clamp(0.5rem, 1vw, 1.2rem);
+    margin-bottom: clamp(0.5rem, 1vw, 1.2rem);
+}
+.them {
+    border-top-left-radius: 0px;
+    background-color: var(--primary-button-color);
+}
+.me {
+    border-top-right-radius: 0px;
+    background-color: var(--secondary-button-color);
+    
+}

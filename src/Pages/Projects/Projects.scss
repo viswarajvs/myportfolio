@@ -15,3 +15,6 @@
     margin-right: 1vw;
     color: var(--primary-icon-color);
 }
+.arrowRight {
+    height: clamp(1rem, 1vw, 1rem) !important;
+}
