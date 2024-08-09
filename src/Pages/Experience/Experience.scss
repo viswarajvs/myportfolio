@@ -9,6 +9,7 @@
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     border-radius: 10px;
     position: relative;
+    z-index: 10;
 }
 
 .experienceParent {
@@ -26,7 +27,6 @@
     transform: translate(-50%, -50%);
     background-color: var(--primary-card-color);
     svg {
-        z-index: 11;
         width: inherit;
         height: inherit;
     }

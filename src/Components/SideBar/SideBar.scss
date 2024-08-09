@@ -11,6 +11,7 @@
     top: calc(50% + 5vh);
     padding-right: 2vw;
     transform: translate(0, -50%) !important;
+    z-index: 100;
 }
 
 .sidebarContainer {

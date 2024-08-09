@@ -6,6 +6,7 @@ import verifiedIcon from '../../common/images/verifiedicon.svg'
 import { mydata } from '../../metadata/mydata'
 import Badge from '../../Components/Badge/Badge'
 import ProfilePic from '../ProfilePic/ProfilePic'
+import { Button } from 'react-bootstrap'
 const Home = () => {
 
     return (
@@ -18,8 +19,8 @@ const Home = () => {
                         </div>
                         <section className='flex-column align-center'>
                             <div className='viswaname bold flex justify-center gap-2'>
-                                <label>{mydata.profile.name}</label>
-                                <Image src={verifiedIcon} className='verifiedIcon' />
+                                <div>{mydata.profile.name}</div>
+                                <div><Image src={verifiedIcon} className='verifiedIcon' /></div>
                             </div>
                             <div className='flex ter-color font-1-2 gap-1'>
                                 <Badge>ReactJS</Badge>
@@ -32,6 +33,10 @@ const Home = () => {
                         <section>
                             <label className='text-center sec-color font-1-5'>{mydata.profile.bio}</label>
                         </section>
+                    </Reveal>
+                    <Reveal yHidden={20} className='flex gap-2 margin-2'>
+                        <Button className='primary-button hover-zoom-0'>See my resume</Button>
+                        <Button className='secondary-button hover-zoom-0'>Get in touch</Button>
                     </Reveal>
                     {/* <div><label>Hey,</label></div>
                     <div className='viswaname bold'>

@@ -7,10 +7,7 @@
     font-weight: bold;
     font-family: 'Galey-Bold', Courier, monospace;
 }
-.commontitle {
-    font-weight: bold;
-    font-family: 'Galey-Bold', Courier, monospace;
-}
+
 .verifiedProfilePic {
     width: clamp(10rem, 15vw, 10rem) !important;
     height: clamp(10rem, 15vw, 10rem) !important;
@@ -18,37 +15,48 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 .nav-link.active {
     color: var(--primary-font-color) !important;
     background-color: unset !important;
     border: none !important;
     border-bottom: 2px solid var(--primary-font-color) !important;
 }
+
 .nav-link {
     color: var(--ternary-font-color) !important;
     border: none !important;
 }
+
 .nav-tabs {
     border: none !important;
 }
+
 .nav-link.active-visible {
     box-shadow: none !important;
     border: none !important;
 }
+
 .nav-link:focus-visible {
     box-shadow: none !important;
     border: none !important;
 }
+
 .profileHolder {
     height: clamp(10rem, 15vw, 10rem);
     display: flex;
     align-items: center;
 }
+.action-buttons {
+    
+}
+
 .verifiedIcon {
     width: clamp(2.2rem, 4vw, 5rem) !important;
     height: clamp(2.2rem, 4vw, 5rem) !important;
-    margin-top: 2px;
+    margin-top: -1.2vw;
 }
+
 @media (max-width: 600px) {
     .homepage-container {
         flex-direction: column;

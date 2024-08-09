@@ -1,0 +1,14 @@
+
+.flipcard {
+    transition: all 1s ease-in-out;
+}
+.showCard {
+    transition: all 1s ease-in-out;
+    opacity: 1;
+}
+.hideCard {
+    transition: all 1s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-100%) rotateY(-180deg);
+}

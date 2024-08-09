@@ -1,0 +1,15 @@
+
+
+.skillTab {
+    height: clamp(1rem, 1.5vw, 1rem);
+    svg {
+        height: 100%;
+    }
+}
+.skillContainer {
+    flex-wrap: wrap;
+    gap: 2vw clamp(3rem, 5vw, 4rem);
+}
+.skillBadge {
+   width: fit-content;
+}

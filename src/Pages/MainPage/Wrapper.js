@@ -23,7 +23,7 @@ const Wrapper = ({ children, index, title }) => {
                         padding: "4vw"
                     }}
                 >
-                    <div className='bold sectiontitle'>{title}</div>
+                    {title && <div className='bold sectiontitle'>{title}</div>}
                     {children}
                 </motion.div>
             </Reveal>

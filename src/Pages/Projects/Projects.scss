@@ -1,0 +1,17 @@
+.titlecard {
+    padding-bottom: 1vw;
+    margin-bottom: 0.5vw;
+    border-bottom: 1px solid var(--primary-border-color);
+}
+.projectlogo {
+    height: clamp(2rem, 4vw, 4rem);
+    margin-top: clamp(-1rem, -1vw, -1rem);
+    svg {
+        height: inherit;
+    }
+}
+.rolebullet {
+    height: 2vw;
+    margin-right: 1vw;
+    color: var(--primary-icon-color);
+}

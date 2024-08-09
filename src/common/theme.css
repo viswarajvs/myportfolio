@@ -7,12 +7,15 @@
     --primary-icon-light: #3E4498;
     --primary-card-light: rgba(237, 237, 237, 0.97);
     --primary-slip-light: rgba(233, 230, 230, 0.97);
+    --primary-button-light: #3E4498;
+    --primary-border-light: rgb(209, 202, 202);
 
     --primary-bgimage-light: url('./images/lightbg.svg');
 
-    --secondary-font-light: #898994;
+    --secondary-button-light: #5783db;
+    --secondary-font-light: #66666d;
 
-    --ternary-font-light: #aeaeb8;
+    --ternary-font-light: #808086;
 
     /* ------------------------------ */
     --primary-bg-dark: rgba(31, 31, 31, 0.5);
@@ -20,10 +23,13 @@
     --primary-icon-dark: #ACA9BB;
     --primary-card-dark: rgb(13, 13, 13, 0.97);
     --primary-slip-dark: rgba(26, 26, 26, 0.97);
+    --primary-button-dark: #3E4498;
+    --primary-border-dark: rgb(59, 58, 58);
 
     --primary-bgimage-dark: url('./images/darkbg.svg');
 
     --secondary-font-dark: #9496b0;
+    --secondary-button-dark: #49484e;
 
     --ternary-font-dark: #656676;
 
@@ -35,7 +41,10 @@
     --primary-card-color: var(--primary-card-dark);
     --primary-bgimage: var(--primary-bgimage-dark);
     --primary-slip-color: var(--primary-slip-dark);
+    --primary-button-color: var(--primary-button-dark);
+    --primary-border-color: var( --primary-border-dark);
 
+    --secondary-button-color: var(--secondary-button-dark);
     --secondary-font-color: var(--secondary-font-dark);
 
     --ternary-font-color: var(--ternary-font-dark);
@@ -48,8 +57,11 @@
     --primary-card-color: var(--primary-card-light);
     --primary-bgimage: var(--primary-bgimage-light);
     --primary-slip-color: var(--primary-slip-light);
+    --primary-button-color: var(--primary-button-light);
+    --primary-border-color: var( --primary-border-light);
 
     --secondary-font-color: var(--secondary-font-light);
+    --secondary-button-color: var(--secondary-button-light);
 
     --ternary-font-color: var(--ternary-font-light);
 }
