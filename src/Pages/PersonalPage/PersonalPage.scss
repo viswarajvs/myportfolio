@@ -1,0 +1,34 @@
+.ytplayer>* {
+    flex: 1 1 calc(50% - 2vw);
+}
+
+.ytdetails {
+    padding: 0 1vw;
+    text-align: left;
+}
+
+.mainyt {
+    font-family: 'Galey-Bold', Courier, monospace;
+    color: var(--primary-font-color);
+}
+
+.ytcard {
+    overflow: hidden;
+
+    iframe {
+        border-radius: 20px;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+    }
+}
+
+@media (max-width: 600px) {
+    .ytcard {
+        flex: unset;
+        max-width: 100%;
+        width: 100%;
+        iframe {
+            height: 40vw !important;
+        }
+    }
+}

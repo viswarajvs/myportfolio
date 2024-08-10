@@ -2,6 +2,7 @@ import Experience from '../Pages/Experience/Experience'
 import Home from '../Pages/Home/Home'
 import Summary from '../Pages/Summary/Summary'
 import Projects from '../Pages/Projects/Projects'
+import PersonalPage from '../Pages/PersonalPage/PersonalPage'
 export const pages = [
     {
         id:1,
@@ -24,5 +25,10 @@ export const pages = [
         id:3,
         element: Projects,
         title: 'Project Portfolio'
+    },
+    {
+        id:3,
+        element: PersonalPage,
+        title: 'Personal Portfolio'
     }
 ]

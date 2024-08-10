@@ -14,6 +14,7 @@ import { ReactComponent as JiraLogo } from '../common/images/skills/jira-1.svg'
 import { ReactComponent as JenkinsLogo } from '../common/images/skills/jenkins.svg'
 import { ReactComponent as IKEALogo } from '../common/images/Ikea_logo.svg'
 import { ReactComponent as NIALogo } from '../common/images/New_India_Assurance.svg'
+import { ReactComponent as SGRELogo } from '../common/images/Siemens_Gamesa_logo.svg'
 
 export const mydata = {
     sociallinks: {
@@ -139,6 +140,20 @@ export const mydata = {
     ],
     projects: [
         {
+            name: 'TowerSelect',
+            shortdesc: 'A web-based specialized application used within SGRE Energy for performing cost analysis to optimize design and deployment.',
+            role: 'Frontend Developer & Team Lead',
+            client: 'Siemens Gamesa',
+            techstack: ['ReactJS', 'Azure DevOps', 'Typescript'],
+            logo: SGRELogo,
+            roles: [
+                'Experienced in developing web pages using HTML, CSS, JavaScript, ReactJS, Redux.',
+                'Good expertise in analyzing the Document Object Model (DOM), DOM functions, and JavaScript functions.',
+                'Collaborate with the team to identify problems, testing methods, and best practices',
+                'Closely worked with the client in Agile environment.'
+            ]
+        },
+        {
             name: 'Partner Portal',
             shortdesc: 'A web-based, responsive online portal and cross-platform mobile application where end users can avail of features like sales declaration, request transactions, and content management.',
             role: 'Full Stack Developer',
@@ -173,5 +188,19 @@ export const mydata = {
                 'Provide prompt and accurate feedback to customers.'
             ]
         }
-    ]
+    ],
+    personal: {
+        apiKey: 'AIzaSyAQVFNwcOTlO7xSEBApYdsxIt9XgyRVIT8',
+        ytlink: 'https://www.youtube.com/@ViswarajVeeyes/featured',
+        youtube: [
+            { url: 'https://www.youtube.com/embed/VuRHHHaGjfc?si=QgGGT-G9Mp1d2NDy', id: 'VuRHHHaGjfc' },
+            { url: 'https://www.youtube.com/embed/bCyQTKUZdp4?si=7GtT6H6BUD-oGvZ3', id: 'bCyQTKUZdp4' },
+            {
+                url: 'https://www.youtube.com/embed/NVqr0rYRBVo?si=IKwd86QDH5yQO_Ky', id: 'NVqr0rYRBVo'
+            },
+            {
+                url: 'https://www.youtube.com/embed/5CfHPQtl9zE?si=tJGx08q_56mTpH-8', id: '5CfHPQtl9zE'
+            }
+        ]
+    }
 }

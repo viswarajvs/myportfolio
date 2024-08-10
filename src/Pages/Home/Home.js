@@ -36,7 +36,7 @@ const Home = () => {
                     </Reveal>
                     <Reveal yHidden={20} className='flex gap-2 margin-2'>
                         <Button className='primary-button hover-zoom-0'>See my resume</Button>
-                        <Button className='secondary-button hover-zoom-0'>Get in touch</Button>
+                        {/* <Button className='secondary-button hover-zoom-0'>Get in touch</Button> */}
                     </Reveal>
                     {/* <div><label>Hey,</label></div>
                     <div className='viswaname bold'>

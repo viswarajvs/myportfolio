@@ -30,6 +30,9 @@
 .margin-2 {
     margin: 2vw
 }
+.margin-2-0 {
+    margin: 2vw 0
+}
 .font-1-5 {
     font-size: clamp(1rem, 1.5vw, 2rem);
 }
@@ -96,7 +99,13 @@
 .gap-1 {
     gap: 1vw
 }
-
+.ellipsis-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .height-100 {
     height: 100%;
 }
@@ -128,14 +137,22 @@
 .width-100 {
     width: 100%;
 }
-.gap-5 {
-    gap: 5vw;
+.gap-3 {
+    gap: 3vw;
 }
-
+.seeAllIcon {
+    height: clamp(1.2rem, 1vw, 1rem);
+    margin-top: -0.1vw;
+    svg {
+        height: inherit;
+    }
+}
 .flex-column {
     flex-direction: column;
 }
-
+.flex-end {
+    justify-content: end;
+}
 .flex-1 {
     flex: 1;
 }
@@ -149,6 +166,9 @@
 }
 .padding-0-1 {
     padding: 0 1vw;
+}
+.margin-0-2 {
+    margin: 0 2vw;
 }
 
 

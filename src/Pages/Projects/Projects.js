@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard"
 
 const Projects = () => {
     return (
-        <div className="flex flex-column gap-5">
+        <div className="flex flex-column gap-2">
             {
                 mydata.projects.map(project => (
                     <ProjectCard data={project} />
