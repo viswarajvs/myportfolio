@@ -16,15 +16,15 @@ const SideBar = () => {
             <Link to={mydata?.sociallinks?.linkedin} target='_blank'>
                 <Reveal xHidden={20}><LinkedInLogo className='socialLinkItem hover-zoom-1' /></Reveal>
             </Link>
-            <Link to={`${mydata?.sociallinks?.whatsapp}`} target='_blank'>
+            {/* <Link to={`${mydata?.sociallinks?.whatsapp}`} target='_blank'>
                 <Reveal xHidden={20}><WhatsappLogo className='socialLinkItem hover-zoom-1' /></Reveal>
-            </Link>
+            </Link> */}
             <Link to={`mailto:${mydata?.sociallinks?.email}`}>
                 <Reveal xHidden={20}><EmailLogo className='socialLinkItem hover-zoom-1' /></Reveal>
             </Link>
-            <Link to={`tel:${mydata?.sociallinks?.email}`}>
+            {/* <Link to={`tel:${mydata?.sociallinks?.phone}`}>
                 <Reveal xHidden={20}><PhoneLogo className='socialLinkItem hover-zoom-1' /></Reveal>
-            </Link>
+            </Link> */}
             <Link to={mydata?.sociallinks?.insta} target='_blank'>
                 <Reveal xHidden={20}><InstaLogo className='socialLinkItem hover-zoom-1' /></Reveal>
             </Link>

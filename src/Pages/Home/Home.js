@@ -10,6 +10,7 @@ import { Button } from 'react-bootstrap'
 import PdfModal from '../../Components/PdfViewer/PdfViewer'
 import resumeFIle from '../../common/files/resume.pdf'
 import { useState } from 'react'
+import ContactForm from '../ContactMe/ContactForm'
 const Home = () => {
     const [showResume, setShowResume] = useState(false)
     return (
@@ -39,7 +40,7 @@ const Home = () => {
                             </section>
                         </Reveal>
                         <Reveal yHidden={20} className='flex gap-2 margin-2'>
-                            <Button onClick={() => setShowResume(true)} className='primary-button hover-zoom-0'>See my resume</Button>
+                            {/* <Button onClick={() => setShowResume(true)} className='primary-button hover-zoom-0'>Contact me</Button> */}
                             {/* <Button className='secondary-button hover-zoom-0'>Get in touch</Button> */}
                         </Reveal>
                         {/* <div><label>Hey,</label></div>
@@ -53,8 +54,12 @@ const Home = () => {
 
                 </div>
             </div >
-            <PdfModal
+            <ContactForm
                 isOpen={showResume}
+                onRequestClose={() => setShowResume(false)}
+            />
+            <PdfModal
+                isOpen={false}
                 title='My resume'
                 pdfUrl={resumeFIle}
                 onRequestClose={() => setShowResume(false)}
