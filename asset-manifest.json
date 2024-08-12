@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.0a818a37.css",
+    "main.js": "/myportfolio/static/js/main.3b1010cd.js",
+    "static/media/lightbg.svg": "/myportfolio/static/media/lightbg.e035db5c6ff7d74027522deab1f91c2c.svg",
+    "static/media/darkbg.svg": "/myportfolio/static/media/darkbg.6da66c15a86111118bfd605abaa758a1.svg",
+    "static/media/Galey-light.ttf": "/myportfolio/static/media/Galey-light.d9351dd1a3deb72e5169.ttf",
+    "static/media/Galey-bold.ttf": "/myportfolio/static/media/Galey-bold.4d1c21412f805ca93bea.ttf",
+    "static/media/resume.pdf": "/myportfolio/static/media/resume.54662dd9393c1fd680dc.pdf",
+    "static/media/vprofile-pic.jpg": "/myportfolio/static/media/vprofile-pic.44632aa201c5540af951.jpg",
+    "static/media/New_India_Assurance.svg": "/myportfolio/static/media/New_India_Assurance.60662f0f9e75b1cacc11cd6a60ad0803.svg",
+    "static/media/jenkins.svg": "/myportfolio/static/media/jenkins.32fc5808b38fcf2894fe6e6f1c363fa9.svg",
+    "static/media/Siemens_Gamesa_logo.svg": "/myportfolio/static/media/Siemens_Gamesa_logo.804897f0798861ebdf7a937d4f120fe8.svg",
+    "static/media/tcs.svg": "/myportfolio/static/media/tcs.92d2fafe011a254b2697ae0f22395e9f.svg",
+    "static/media/infosys-1.svg": "/myportfolio/static/media/infosys-1.9c780aa6ee20a749003056cab3cea366.svg",
+    "static/media/Ikea_logo.svg": "/myportfolio/static/media/Ikea_logo.42259dd378e0fa5990b79a7e5ff5042f.svg",
+    "static/media/verifiedicon.svg": "/myportfolio/static/media/verifiedicon.8c7bcd212c6f000246fa26b4d56d125c.svg",
+    "static/media/reactjs.svg": "/myportfolio/static/media/reactjs.a04de9de9754d7cf8f78bd6c5b171626.svg",
+    "static/media/mysql-icon.svg": "/myportfolio/static/media/mysql-icon.53293fa5182b3b86dc98e0e8d91af29b.svg",
+    "static/media/android.svg": "/myportfolio/static/media/android.9bb3a3ae2d0eca594e730270f4683b2a.svg",
+    "static/media/java.svg": "/myportfolio/static/media/java.04fdacd6d2a2c2d1a1a17ad90c9a3d38.svg",
+    "static/media/linkedlogo.svg": "/myportfolio/static/media/linkedlogo.eb557d8364060837bf4d6c74a6219ccb.svg",
+    "static/media/js.svg": "/myportfolio/static/media/js.3741053afaa57fc4547d15bcfbd0d2d3.svg",
+    "static/media/jira-1.svg": "/myportfolio/static/media/jira-1.2a3b84e037e581657ddbacf4b2eacad7.svg",
+    "static/media/ts.svg": "/myportfolio/static/media/ts.ee275c30dc27c15d5905ec4e3d35b144.svg",
+    "static/media/instalogo.svg": "/myportfolio/static/media/instalogo.1d027c898d4543ef3be3fe876d589c67.svg",
+    "static/media/azuredevops.svg": "/myportfolio/static/media/azuredevops.030705d9d7179bfb07e0b83d920da260.svg",
+    "index.html": "/myportfolio/index.html",
+    "static/media/springboot.svg": "/myportfolio/static/media/springboot.49ec9c3935c4cb84e30ca958977dd7fc.svg",
+    "static/media/fblogo.svg": "/myportfolio/static/media/fblogo.bb3ddab0c490b3ed5acf34ce859ba71b.svg",
+    "static/media/sonarqube.svg": "/myportfolio/static/media/sonarqube.83fafac4f0cc846f017098c6d6753c79.svg",
+    "static/media/emailLogo.svg": "/myportfolio/static/media/emailLogo.592ee60b1afa9e5a8445d5d7f340f531.svg",
+    "main.0a818a37.css.map": "/myportfolio/static/css/main.0a818a37.css.map",
+    "main.3b1010cd.js.map": "/myportfolio/static/js/main.3b1010cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a818a37.css",
+    "static/js/main.3b1010cd.js"
+  ]
+}
