@@ -4,8 +4,6 @@ import { ReactComponent as LinkedInLogo } from '../../common/images/linkedlogo.s
 import { ReactComponent as InstaLogo } from '../../common/images/instalogo.svg'
 import { ReactComponent as FbLogo } from '../../common/images/fblogo.svg'
 import { ReactComponent as EmailLogo } from '../../common/images/emailLogo.svg'
-import { ReactComponent as PhoneLogo } from '../../common/images/phoneLogo.svg'
-import { ReactComponent as WhatsappLogo } from '../../common/images/whatsapp.svg'
 import { Link } from "react-router-dom";
 import { mydata } from '../../metadata/mydata'
 import Reveal from '../../HOC/withReveal'
