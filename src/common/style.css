@@ -84,6 +84,15 @@
     color: var(--secondary-font-bright-color);
     font-size: clamp(0.8rem, 0.5vw, 1rem);
 }
+.ternary-color {
+    color: var(--secondary-font-bright-color);
+}
+.primary-color {
+    color: var(--primary-font-color);
+}
+.primary-theme-color {
+    color: var(--primary-color);
+}
 .para {
     margin-top: 1vw;
     color: var(--secondary-font-color);
@@ -92,12 +101,21 @@
 .space-between {
     justify-content: space-between;
 }
-
+.scrollTopIcon {
+    z-index: 101 !important;
+    right: 50px !important;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
 .gap-2 {
     gap: 2vw;
 }
 .gap-1 {
     gap: 1vw
+}
+.nodeclink {
+    text-decoration: none !important;
 }
 .ellipsis-3 {
     display: -webkit-box;

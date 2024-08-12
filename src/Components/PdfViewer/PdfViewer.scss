@@ -1,0 +1,36 @@
+
+.pdf-container {
+    overflow-y: auto;
+    text-align: center; /* Center the pages horizontally */
+}
+@media (max-width: 600px) {
+    .pdf-container {
+        max-height: 50vh; /* Reduce height for smaller screens */
+    }
+    .pdf-page {
+        max-width: 100%; /* Ensure the page does not exceed the container's width */
+        height: auto !important; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the page horizontally */
+    }
+
+    .modal-dialog {
+        margin: 10px; /* Reduce margins to utilize more screen space */
+    }
+    .react-pdf__Page {
+        width: 100% !important; 
+    }
+    .modal-body {
+        padding: 10px; /* Reduce padding for mobile devices */
+    }
+
+    .modal-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-footer button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -42,7 +42,7 @@ const MainPage = ({
                             pages.map((item, index) => {
                                 const PageRender = item.element
                                 return (
-                                    <Wrapper index={index} title={item.title}>
+                                    <Wrapper index={index} title={item.title} data={item}>
                                         <PageRender />
                                     </Wrapper>
                                 )

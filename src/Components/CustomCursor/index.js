@@ -64,8 +64,9 @@ const CustomCursor = () => {
           positionRef.current.destinationY += distanceY
         }
       }
-      secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`
-    };
+      if (secondaryCursor?.current?.style)
+        secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`
+    }
     followMouse()
   }, [])
   return (

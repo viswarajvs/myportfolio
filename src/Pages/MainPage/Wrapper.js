@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import './Wrapper.scss'
 import { useRef } from "react"
 import Reveal from "../../HOC/withReveal"
-const Wrapper = ({ children, index, title }) => {
+const Wrapper = ({ children, index, title, data }) => {
     const myRef = useRef()
     // const { scrollYProgress } = useScroll({
     //     target: myRef,
@@ -14,7 +14,7 @@ const Wrapper = ({ children, index, title }) => {
         <div
             key={index}
             ref={myRef}
-            className={`wrapper-main primary-bg`}
+            className={`wrapper-main primary-bg ${data.nobg && 'wrapper-nobg'}`}
 
         >
             <Reveal xHidden={-75}>

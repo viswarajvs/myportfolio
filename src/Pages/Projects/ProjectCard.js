@@ -1,6 +1,7 @@
 
+import { List } from '@mui/material';
 import Badge from '../../Components/Badge/Badge'
-import ChatBox from '../../Components/ChatBox/ChatBox';
+import BulletPoint from '../../Components/BulletPoint/BulletPoint';
 import FlipCard from '../../Components/FlipCard/FlipCard';
 import Reveal from '../../HOC/withReveal'
 import './Projects.scss'
@@ -25,11 +26,11 @@ const ProjectCard = ({
             </div>
         </div>,
         <div>
-            <div className='margin-top-1 ternary-font'>{
+            <List className='margin-top-1 ternary-font'>{
                 data.roles.map(role => (
-                    <ChatBox alwaysTrue={true} message={role} />
+                    <BulletPoint message={role} />
                 ))
-            }</div>
+            }</List>
             <div className='flex space-between ternary-font align-center'>
                 <div className='ternary-font flex gap-2'>
                 </div>
