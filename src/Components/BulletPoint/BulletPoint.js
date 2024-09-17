@@ -1,5 +1,7 @@
 import { Avatar, ListItem, ListItemAvatar } from "@mui/material"
 import CheckIcon from '@mui/icons-material/Check'
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
 
 const BulletPoint = ({
     message
@@ -7,8 +9,8 @@ const BulletPoint = ({
     return (
         <ListItem>
             <ListItemAvatar>
-                <Avatar>
-                    <CheckIcon />
+                <Avatar style={{ background: 'none' }}>
+                    <KeyboardArrowRightIcon className="themeSVGIcon" />
                 </Avatar>
             </ListItemAvatar>
             {message}

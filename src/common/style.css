@@ -72,6 +72,9 @@
     color: var(--primary-font-color);
     font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
+.themeSVGIcon {
+    color: var(--primary-font-color);
+}
 .secondary-font {
     color: var(--primary-font-color);
     font-size: clamp(1rem, 1.5vw, 1.5rem);
