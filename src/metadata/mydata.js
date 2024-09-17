@@ -15,6 +15,7 @@ import { ReactComponent as JenkinsLogo } from '../common/images/skills/jenkins.s
 import { ReactComponent as IKEALogo } from '../common/images/Ikea_logo.svg'
 import { ReactComponent as NIALogo } from '../common/images/New_India_Assurance.svg'
 import { ReactComponent as SGRELogo } from '../common/images/Siemens_Gamesa_logo.svg'
+import { ReactComponent as JestLogo } from '../common/images/skills/Jest.svg'
 
 export const mydata = {
     sociallinks: {
@@ -27,7 +28,7 @@ export const mydata = {
     },
     profile: {
         name: 'Viswaraj V S',
-        bio: 'Specializing in React.js and TypeScript, proficient in Java Spring Boot and DevOps practices. With over 7 years of experience in major companies, known for creating innovative, user-centric interfaces. Excels in cross-team collaboration to deliver exceptional products on time and within budget, focusing on responsive applications that enhance user experiences.'
+        bio: 'Specializing in React.js and TypeScript, with strong skills in DevOps practices and a working knowledge of Java Spring Boot. With over 7 years of experience in major companies, known for creating innovative, user-centric interfaces. Excels in cross-team collaboration to deliver exceptional products on time and within budget, focusing on responsive applications that enhance user experiences.'
     },
     skills: [
         {
@@ -50,6 +51,13 @@ export const mydata = {
             description: '3 years experience',
             logo: TSLogo,
             proficiency: 80
+        },
+        {
+            name: 'Jest',
+            exp: '6 years',
+            description: '7 years experience',
+            logo: JestLogo,
+            proficiency: 100
         },
         {
             name: 'Java',
@@ -116,7 +124,7 @@ export const mydata = {
             designation: 'Senior Associate Consultant',
             location: 'Trivandrum',
             logo: InfyLogo,
-            description: 'Currently working at Infosys as a ReactJS Frontend Developer, leading the frontend team for the past 2 years. Responsible for developing reusable UI components, ensuring high code quality, overseeing deployment processes, and strategic planning for frontend development.'
+            description: 'Currently working at Infosys as a ReactJS Frontend Developer, leading the frontend team for more than 2 years. Responsible for developing reusable UI components, ensuring high code quality, overseeing deployment processes, and strategic planning for frontend development.'
         },
         {
             companyname: 'Tata Consultancy Services',
@@ -132,7 +140,7 @@ export const mydata = {
             startdate: 'Mar-20-2017',
             enddate: 'Dec-20-2021',
             designation: 'Software Engineer',
-            location: 'Trivandrum',
+            location: 'Kolkata',
             logo: null,
             continueLogo: TCSLogo,
             description: 'Focused on building and maintaining PL/SQL scripts, managing databases, and providing technical support to end-users. Additionally, developed custom tools using Java, Swing, and WPF to enhance user experience and streamline operations.'
@@ -140,6 +148,7 @@ export const mydata = {
     ],
     projects: [
         {
+            company: InfyLogo,
             name: 'TowerSelect',
             shortdesc: 'A web-based specialized application used within SGRE Energy for performing cost analysis to optimize design and deployment.',
             role: 'Frontend Developer & Team Lead',
@@ -147,32 +156,37 @@ export const mydata = {
             techstack: ['ReactJS', 'Azure DevOps', 'Typescript'],
             logo: SGRELogo,
             roles: [
-                'Experienced in developing web pages using HTML, CSS, JavaScript, ReactJS, Redux.',
-                'Good expertise in analyzing the Document Object Model (DOM), DOM functions, and JavaScript functions.',
-                'Collaborate with the team to identify problems, testing methods, and best practices',
-                'Closely worked with the client in Agile environment.'
+                'Contributed as the frontend lead, responsible for collaborating with Product Owners and Business Analysts to gather new requirements, providing estimations, and overseeing development and deployment support.',
+                'Integrated and optimized OpenStreetMap and Google Maps APIs to enhance location-based features and user experience within the project.',
+                'Refactored code to improve reusability, reducing development time and costs for future features and enhancements.',
+                'Developed multiple proof of concepts (POCs) to demonstrate potential solutions and features to the client, leading to successful implementation and approval.',
+                'Worked closely with the client in an Agile environment, participating in sprint planning, daily stand-ups, and regular feedback sessions to ensure alignment and timely delivery of project goals.',
+                'Implemented code coverage with Jest and resolved SonarQube issues to ensure comprehensive test coverage and uphold high-quality code standards.',
+                'Conducted code reviews, approved pull requests, and maintained thorough documentation to ensure code quality and project clarity.'
             ]
         },
         {
+            company: TCSLogo,
             name: 'Partner Portal',
             shortdesc: 'A web-based, responsive online portal and cross-platform mobile application where end users can avail of features like sales declaration, request transactions, and content management.',
             role: 'Full Stack Developer',
             client: 'IKEA',
-            techstack: ['Java', 'Spring Boot', 'MySQL', 'ReactJS'],
+            techstack: ['ReactJS', 'Java', 'Spring Boot', 'MySQL'],
             logo: IKEALogo,
             roles: [
-                'Experienced in developing web pages using HTML, CSS, JavaScript, ReactJS, Redux.',
-                'Good expertise in analyzing the Document Object Model (DOM), DOM functions, and JavaScript functions.',
-                'Implemented email navigation using JWT authentication token.',
+                'Developed new components, implemented pagination, utilized high-order components (HOCs), and integrated skeleton loading to enhance user experience and performance in the application.',
+                'Developed mobile-responsive screens using ReactJS to ensure an optimal user experience across different devices and screen sizes.',
+                'Developed a centralized email notification microservice that utilized HTML templates for dynamic and customizable email content.',
+                'Managed application state using Redux to ensure predictable and efficient state management.',
                 'Developed micro-services that utilized Spring framework along with various frameworks like Spring MVC, Spring Data JPA that provide RESTful APIs that can be consumed by other applications.',
                 'Developed JUnit test case for different module with code coverage up to 90%.',
-                'Configured SonarLint in the IntelliJ IDEA IDE to detect quality and security issues.',
-                'Collaborate with the team to identify problems, testing methods, and best practices',
+                'Configured SonarLint in IntelliJ IDEA IDE to detect quality and security issues.',
                 'Worked with the build tools like Jenkins.',
                 'Closely worked with the client in Agile environment.'
             ]
         },
         {
+            company: TCSLogo,
             name: 'New India Assurance',
             shortdesc: 'A web-based platform using which customers can buy new policies or renew old ones. Includes core insurance functionalities like underwriting, sales data, data analysis tool, etc.',
             role: 'Support Engineer',

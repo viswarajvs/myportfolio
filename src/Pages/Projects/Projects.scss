@@ -4,8 +4,15 @@
     border-bottom: 1px solid var(--primary-border-color);
 }
 .projectlogo {
-    height: clamp(2rem, 4vw, 4rem);
+    height: clamp(2rem, 2.5vw, 4rem);
     margin-top: clamp(-1rem, -1vw, -1rem);
+    svg {
+        height: inherit;
+        width: auto;
+    }
+}
+.projectCompanylogo {
+    height: clamp(2rem, 2vw, 4rem);
     svg {
         height: inherit;
         width: auto;

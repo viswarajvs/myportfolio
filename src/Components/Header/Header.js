@@ -9,9 +9,9 @@ import Image from '../Image/Image'
 import profilePic from '../../common/images/vprofile-pic.jpg'
 
 const Header = () => {
-    const { scrollYProgress } = useScroll()
-    const opacity = useTransform(scrollYProgress, [0, 0.44, 0.46], [0, 0, 1])
-    const scale = useTransform(scrollYProgress, [0, 0.4, 0.5], [0, 0.8, 1])
+    // const { scrollYProgress } = useScroll()
+    // const opacity = useTransform(scrollYProgress, [0, 0.44, 0.46], [0, 0, 1])
+    // const scale = useTransform(scrollYProgress, [0, 0.4, 0.5], [0, 0.8, 1])
     const { theme, toggleTheme } = useContext(ThemeContext)
     return (
         <Reveal
@@ -27,10 +27,6 @@ const Header = () => {
             </div>
             <Reveal>
                 <motion.span className='title flex align-center'
-                    style={{
-                        opacity,
-                        scale
-                    }}
                 >
                     <Image src={profilePic} className='profile-pic' />
                 </motion.span>

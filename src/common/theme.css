@@ -16,7 +16,7 @@
     --secondary-font-light: #66666d;
     --secondary-font-bright-light: #c1c1ce;
 
-    --ternary-font-light: #808086;
+    --ternary-font-light: #2e2e31;
 
     /* ------------------------------ */
     --primary-bg-dark: rgba(31, 31, 31, 0.5);
@@ -33,7 +33,7 @@
     --secondary-font-bright-dark: #b8b9d2;
     --secondary-button-dark: #49484e;
 
-    --ternary-font-dark: #656676;
+    --ternary-font-dark: #9394a3;
 
 }
 .theme-dark {

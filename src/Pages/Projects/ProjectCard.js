@@ -10,6 +10,7 @@ const ProjectCard = ({
     data
 }) => {
     const Logo = data.logo
+    const CompanyLogo = data.company
     const flipChild = [
         <div>
             <div className='ternary-font'>{data.shortdesc}</div>
@@ -42,8 +43,8 @@ const ProjectCard = ({
         <Reveal yHidden={75}>
             <FlipCard className="experience-container project-container" child={flipChild}>
                 <div className='primary-font grandtitle flex space-between titlecard align-center'>
-                    <label>{data.name}</label>
                     {data.logo && <div className='projectlogo hover-zoom-0'><Logo /></div>}
+                    {data.company && <div className='projectCompanylogo hover-zoom-0'><CompanyLogo /></div>}
                 </div>
             </FlipCard>
 

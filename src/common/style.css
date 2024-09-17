@@ -78,7 +78,7 @@
 }
 .ternary-font {
     color: var(--ternary-font-color);
-    font-size: clamp(0.8rem, 0.5vw, 1rem);
+    font-size: clamp(0.8rem, 0.8vw, 1rem);
 }
 .ternary-font-bright {
     color: var(--secondary-font-bright-color);

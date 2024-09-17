@@ -29,7 +29,7 @@ const Home = () => {
                                 <div className='flex ter-color font-1-2 gap-1'>
                                     <Badge>ReactJS</Badge>
                                     <Badge>TypeScript</Badge>
-                                    <Badge>Java Springboot</Badge>
+                                    <Badge>DevOps</Badge>
                                 </div>
                             </section>
                         </Reveal>

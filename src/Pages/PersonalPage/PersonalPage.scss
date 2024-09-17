@@ -14,11 +14,11 @@
 
 .ytcard {
     overflow: hidden;
-
     iframe {
         border-radius: 20px;
         width: -webkit-fill-available;
         height: -webkit-fill-available;
+        min-height: 12vw;
     }
 }
 
